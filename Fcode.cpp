@@ -24,3 +24,6 @@ template<> inline Vector4ub swizzle(const Vector4ub& value) {
     return Math::gather<'b', 'g', 'r', 'a'>(value);
 }
 //yes
+template<class T> T swizzle(const T& value);
+template<> inline UnsignedByte swizzle(const UnsignedByte& value) {
+    return value;
