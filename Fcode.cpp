@@ -23,3 +23,4 @@ template<> inline Vector3ub swizzle(const Vector3ub& value) {
 template<> inline Vector4ub swizzle(const Vector4ub& value) {
     return Math::gather<'b', 'g', 'r', 'a'>(value);
 }
+//yes
